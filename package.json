@@ -1,0 +1,30 @@
+{
+	"name": "nuxt-app",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"build": "nuxt build",
+		"dev": "nuxt dev",
+		"generate": "nuxt generate",
+		"preview": "nuxt preview",
+		"postinstall": "nuxt prepare"
+	},
+	"dependencies": {
+		"@antify/authentication-module": "^1.0.0",
+		"@antify/authorization-module": "^1.0.0",
+		"@antify/app-context-module": "^1.2.0",
+		"@antify/database": "^1.2.0",
+		"@antify/database-module": "^1.2.0",
+		"@antify/example-module": "^1.0.0",
+		"@antify/ui-module": "^1.6.0",
+		"@antify/validate": "1.14.0",
+		"@fortawesome/free-solid-svg-icons": "^6.5.1",
+		"nuxt": "^3.11.2",
+		"vue": "^3.4.21",
+		"vue-router": "^4.3.0"
+	},
+	"devDependencies": {
+		"@antify/database-cli": "^1.0.1",
+		"@faker-js/faker": "^8.4.1"
+	}
+}
