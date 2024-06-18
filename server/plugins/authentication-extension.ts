@@ -17,6 +17,10 @@ export default defineNitroPlugin((nitro) => {
 				model: client.getModel<Role>('authorization_roles')
 			});
 
+		if (!user) {
+			throw new Error(`Missing required authorization data for authentication of type ${authentication.provider} with identifier ${authentication.identifier}`)
+		}
+
 		await useAuth().login(event, user.authorization);
 	});
 })
