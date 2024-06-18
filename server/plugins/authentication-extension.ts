@@ -11,7 +11,7 @@ export default defineNitroPlugin((nitro) => {
 			.connect();
 
 		const user = await client.getModel<User>('users')
-			.findOne({'authentication._id': authentication._id})
+			.findOne({'authentications._id': authentication._id})
 			.populate({
 				path: 'authorization.appAccesses.roles',
 				model: client.getModel<Role>('authorization_roles')
